@@ -1,0 +1,138 @@
+@use "./variable" as *;
+
+
+
+.showcase-txt{
+    padding-left: 40px;
+h1{
+    font-weight: 800;
+font-size: 58px;
+line-height: 1.37931;
+letter-spacing: 0em;
+color: #fff;
+}
+p{
+    font-weight: 500;
+font-size: 20px;
+line-height: 1.5;
+letter-spacing: 0.01em;
+color: #fff;
+}
+}
+.btn2{
+    border-radius: 37px;
+padding: 15px 36px;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.57143;
+letter-spacing: 0.01em;
+text-align: center;
+color: #fff;
+background-color: $primary-color;
+}
+.btn3{
+    border: 1px solid #fff;
+border-radius: 37px;
+padding: 15px 36px;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.57143;
+letter-spacing: 0.01em;
+text-align: center;
+color: #fff;
+}
+.showcase > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:  50px 0;
+}
+.booked{border-radius: 10px;
+    padding: 25px;
+    h2{
+        font-weight: 700;
+font-size: 24px;
+line-height: 1.33333;
+letter-spacing: 0em;
+text-align: center;
+color: #252b42;
+    }
+}
+.btn4{
+    border-radius: 5px;
+padding: 15px 40px;
+background-color: $primary-color;
+
+font-weight: 600;
+font-size: 14px;
+line-height: 1.57143;
+letter-spacing: 0.01em;
+text-align: center;
+color: #fff;
+}
+.booked-items{
+    p{
+        font-weight: 600;
+font-size: 14px;
+line-height: 1.71429;
+letter-spacing: 0.01em;
+color: #252b42;
+    }
+    input{
+        border: 1px solid #e6e6e6;
+        border-radius: 5px;
+        padding: 19px 25px;
+        outline: none;
+        font-weight: 400;
+font-size: 14px;
+line-height: 2;
+letter-spacing: 0.01em;
+color: #737373;
+    }
+    select{
+        border: 1px solid #e6e6e6;
+        border-radius: 5px;
+        padding: 19px 25px;
+        width: 220px; 
+        option{
+            outline: none;
+        }
+      
+    }
+}
+@media (max-width:992px){
+    .showcase > div{
+        flex-direction: column;
+        
+        align-items: center;
+        gap: 30px;
+    }
+    .showcase-txt{
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header{
+        background-size: cover;
+    }
+  
+}
+@media (max-width:484px){
+    .showcase-txt{
+        padding-left: 0;
+        h1{
+            font-size: 40px;
+            text-align: center;
+        }
+        p{
+            font-size: 20px;
+            text-align: center;
+        }
+        }
+        .showcase_btns{
+            flex-direction: column;
+            gap: 30px;
+        }
+}

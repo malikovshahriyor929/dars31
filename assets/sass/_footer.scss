@@ -1,0 +1,98 @@
+@use "./variable" as *;
+
+
+.footer{
+    margin: 50px 0;
+}
+.footer-items{
+    h3{
+        font-weight: 700;
+font-size: 24px;
+line-height: 1.33333;
+letter-spacing: 0em;
+color: #252b42;
+    }
+    p{
+        font-weight: 500;
+font-size: 14px;
+line-height: 1.42857;
+letter-spacing: 0.01em;
+color: #737373;
+    }
+    a{
+        font-weight: 600;
+font-size: 14px;
+line-height: 1.71429;
+letter-spacing: 0.01em;
+color: #737373;
+    }
+}
+.footer_first
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+}
+.footer-items{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+@media(max-width:1014px)
+{
+    .footer_first{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .touch > div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        padding: 50px 0;
+    }
+}
+@media(max-width:770px)
+{
+    .footer_first{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        gap: 30px;
+    }
+}
+@media(max-width:506px)
+{
+    .footer_first{
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4,1fr);
+        gap: 30px;
+    }
+    .send{
+        display: flex;
+        align-items: center;
+        input{
+            border: 1px solid #e6e6e6;
+            padding: 13px 15px;
+            border-radius:  5px 0 0 5px ;
+            outline: none;
+            border: none;
+            width: 70%;
+        }
+    }
+    .btn_touch{
+        background-color: $primary-color;
+        font-weight: 400;
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 0 5px 5px 0;
+    padding: 10px 15px;
+    }
+}
+
+
+
+

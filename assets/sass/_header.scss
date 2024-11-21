@@ -1,0 +1,53 @@
+@use "./variable" as *;
+
+.header {
+  background-image: url(../../img/showcase_background.png);
+  position: relative;
+}
+.bg-body-tertiary {
+  background-color: transparent !important;
+}
+.navbar-nav {
+  margin-left: 60px;
+}
+.navbar-brand {
+  font-weight: 700;
+  font-size: clamp(20px, 1.4vw, 24px);
+  line-height: 1.33333;
+  letter-spacing: 0em;
+  color: #fff;
+}
+.nav-link {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.71429;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #fff;
+}
+.btn-primary {
+  background: #23a6f0;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.57143;
+  letter-spacing: 0.01em;
+  color: #fff;
+  border-radius: 5px;
+  padding: 15px 25px;
+}
+.navbar-toggler {
+  border: none;
+  outline: none;
+  display: none !important;
+}
+@media (max-width: 992px) {
+  .navbar-toggler {
+    display: block !important;
+  }
+}
+@media (max-width: 339px) {
+  .navbar-toggler {
+    gap: 5px !important;
+  }
+}
